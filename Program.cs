@@ -15,6 +15,7 @@ public class MyProgram
         public static void Main(string[] args)
         {
             bool boucle;
+            int nombreCalcul = 0; 
 
             boucle = true;
             while (boucle == true)
@@ -72,13 +73,15 @@ public class MyProgram
                     rep = Console.ReadLine();
                 if (rep == "oui")
                 {
+                        nombreCalcul++;
                 }
                 else
                 {
                     boucle = false;
                 }
             }
-            Console.WriteLine("programme fini");
+                Console.WriteLine("vous avez fais "+nombreCalcul+" calculs");
+                Console.WriteLine("programme fini");
         }
 
         public static int Puissance(int n1)
@@ -137,6 +140,7 @@ public class MyProgram
             while (!double.TryParse(Console.ReadLine(), out result)) ;
             return result;
         }
+            
     }
 
 }
