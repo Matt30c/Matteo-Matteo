@@ -14,14 +14,11 @@ public class MyProgram
     {
         public static void Main(string[] args)
         {
-<<<<<<< HEAD
 
-             Airetriangle(12, 54);
-             bool boucle;
-=======
+
+            Airetriangle(12, 54);
             bool boucle;
             int nombreCalcul = 0; 
->>>>>>> ee903ba87756d22e246b6c0566fa8cd5f42c82f3
 
             boucle = true;
             while (boucle == true)
@@ -156,4 +153,5 @@ public class MyProgram
 
     }
 }
+
 
