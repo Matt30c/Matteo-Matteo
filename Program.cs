@@ -14,9 +14,14 @@ public class MyProgram
     {
         public static void Main(string[] args)
         {
+<<<<<<< HEAD
 
              Airetriangle(12, 54);
              bool boucle;
+=======
+            bool boucle;
+            int nombreCalcul = 0; 
+>>>>>>> ee903ba87756d22e246b6c0566fa8cd5f42c82f3
 
             boucle = true;
             while (boucle == true)
@@ -74,13 +79,15 @@ public class MyProgram
                     rep = Console.ReadLine();
                 if (rep == "oui")
                 {
+                        nombreCalcul++;
                 }
                 else
                 {
                     boucle = false;
                 }
             }
-            Console.WriteLine("programme fini");
+                Console.WriteLine("vous avez fais "+nombreCalcul+" calculs");
+                Console.WriteLine("programme fini");
         }
 
         public static int Puissance(int n1)
@@ -144,6 +151,7 @@ public class MyProgram
                 int aire = (basee * hauteur) / 2;
                 Console.WriteLine(aire);
         }
+            
     }
 
     }
