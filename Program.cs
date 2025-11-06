@@ -14,7 +14,9 @@ public class MyProgram
     {
         public static void Main(string[] args)
         {
-            bool boucle;
+
+             Airetriangle(12, 54);
+             bool boucle;
 
             boucle = true;
             while (boucle == true)
@@ -131,13 +133,18 @@ public class MyProgram
 
         // .NET can only read single characters or entire lines from the
         // console. The following function safely reads a double value.
-        private static double inputValue()
+        /*private static double inputValue()
         {
             double result;
             while (!double.TryParse(Console.ReadLine(), out result)) ;
             return result;
+        }*/
+        public static void Airetriangle(int basee, int hauteur)
+        {
+                int aire = (basee * hauteur) / 2;
+                Console.WriteLine(aire);
         }
     }
 
-}
+    }
 }
